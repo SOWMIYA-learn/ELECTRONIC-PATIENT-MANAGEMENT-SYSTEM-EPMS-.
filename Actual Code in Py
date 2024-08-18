@@ -1,0 +1,61 @@
+class Patient:
+    def _init_(self, patient_id, name, age, ailment):
+        self.patient_id = patient_id
+        self.name = name
+        self.age = age
+        self.ailment = ailment
+
+class PatientManagementSystem:
+    def _init_(self):
+        self.patients = []
+
+    def add_patient(self, patient_id, name, age, ailment):
+        new_patient = Patient(patient_id, name, age, ailment)
+        self.patients.append(new_patient)
+        print(f"Patient {name} added successfully.")
+
+    def view_patients(self):
+        if not self.patients:
+            print("No patients in the system.")
+            return
+        for patient in self.patients:
+            print(f"ID: {patient.patient_id}, Name: {patient.name}, Age: {patient.age}, Ailment: {patient.ailment}")
+
+    def search_patient(self, patient_id):
+        for patient in self.patients:
+            if patient.patient_id == patient_id:
+                print(f"Found patient: ID: {patient.patient_id}, Name: {patient.name}, Age: {patient.age}, Ailment: {patient.ailment}")
+                return
+        print(f"No patient found with ID: {patient_id}")
+
+def main():
+    system = PatientManagementSystem()
+
+    while True:
+        print("\n--- Electronics Patient Management System ---")
+        print("1. Add Patient")
+        print("2. View Patients")
+        print("3. Search Patient by ID")
+        print("4. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            patient_id = input("Enter Patient ID: ")
+            name = input("Enter Patient Name: ")
+            age = input("Enter Patient Age: ")
+            ailment = input("Enter Patient Ailment: ")
+            system.add_patient(patient_id, name, age, ailment)
+        elif choice == '2':
+            system.view_patients()
+        elif choice == '3':
+            patient_id = input("Enter Patient ID to search: ")
+            system.search_patient(patient_id)
+        elif choice == '4':
+            print("Exiting system.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+
+  
