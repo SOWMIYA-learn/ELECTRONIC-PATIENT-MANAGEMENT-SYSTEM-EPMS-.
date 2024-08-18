@@ -1,0 +1,51 @@
+OUTPUT FOR  ELECTRONIC PATIENT MANAGEMENT SYSTEM :
+O/P:
+
+
+FOR ADDING PATIENT :
+
+--- Electronic Patient Management System ---
+1. Add Patient
+2. View Patients
+3. Search Patient by ID
+4. Exit
+Enter your choice: 1
+Enter Patient ID: 001
+Enter Patient Name: John Doe
+Enter Patient Age: 45
+Enter Patient Ailment: Hypertension
+Patient John Doe added successfully.
+
+FOR VIEWING PATIENT :
+
+--- Electronic Patient Management System ---
+1. Add Patient
+2. View Patients
+3. Search Patient by ID
+4. Exit
+Enter your choice: 2
+ID: 001, Name: John Doe, Age: 45, Ailment: Hypertension
+
+FOR SEARCHING PATIENT BY ID :
+
+--- Electronic Patient Management System ---
+1. Add Patient
+2. View Patients
+3. Search Patient by ID
+4. Exit
+Enter your choice: 3
+Enter Patient ID to search: 001
+Found patient: ID: 001, Name: John Doe, Age: 45, Ailment: Hypertension
+
+FOR EXITING THE SYSTEM :
+
+--- Electronic Patient Management System ---
+1. Add Patient
+2. View Patients
+3. Search Patient by ID
+4. Exit
+Enter your choice: 4
+Exiting system.
+
+
+
